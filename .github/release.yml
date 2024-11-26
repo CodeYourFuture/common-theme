@@ -12,16 +12,16 @@ changelog:
         - Breaking-Changes
     - title: Bug Fixes
       labels:
-        - Semver-Minor
         - Bug-Fixes
     - title: Documentation Update  
       labels:
-        - Semver-Minor
         - Documentation
     - title: Exciting New Features 🎉
       labels:
-        - Semver-Minor
-        - enhancement
+        - Feature
+    - title: Maintenance 
+      labels: 
+        - Chore
     - title: Other Changes
       labels:
         - "*"
