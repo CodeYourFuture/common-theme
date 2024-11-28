@@ -17,7 +17,8 @@
     - Version n+1: Deprecation stays
     - Version n+2: Add breaking change removing deprecation
 - Breaking changes
-    - means the user cannot build their site when the only change made is updating the common-theme version
+    - if the user cannot build their site when the only change made is updating the common-theme version
+    - if the site will continue to build, but will start ignoring or mis-interpreting some input specified in the site
 
 
 ## Quick Links for [common-theme](https://github.com/CodeYourFuture/common-theme) repo
