@@ -1,10 +1,10 @@
 # Common Theme Release workflow
 
 ## Release Notes
-- Frequency of releases
-    - Major release: rare (Example: paradigm change)
-    - Minor release: monthly (Example: breaking changes, documentation, fixes)
-    - Patch release: as and when (Example: small features)
+- We are using the following versions specs (in lieu of [Semantic Versioning specs](https://semver.org/))
+    - Major release (`Semver-Major`): rare (Example: paradigm change)
+    - Minor release (`Semver-Minor`): monthly (Example: breaking changes, documentation, fixes)
+    - Patch release (`Semver-Patch`): as and when (Example: small features)
 - Dependencies
     - are ignored in release documentation
 - New contributors
@@ -31,14 +31,16 @@
 
 
 ## Pre-Release Checklist
-- [ ] Ensure all pull requests to be included in the release are labeled
+- [ ] Ensure all pull requests to be included in the release are labeled and with the appropriate category (Ex: `Breaking-Changes`, `Bug-Fixes`, `Documentation`, `Feature` etc )
+- [ ] Ensure all pull requests to be included in the release are labeled with the appropriate version category (Ex: `Semver-Major`, `Semver-Minor`, `Semver-Patch`)
 - [ ] If a new label has been added ensure that the [release.yml](.github/release.yml) file has been updated
 - [ ] Add a line to the release notes to credit the release manager
-- [ ] Run a test build with the new release to ensure no major errors or bugs
-- [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency.
-- [ ] Write pseudocode that highlights what code should change and how.
-- [ ] Call out if it is recommended that users upgrade because of known problems with older releases.
-- [ ] DRAFT NOTES HERE: [steps for creating a branch with a group of commits](https://scikit-learn.org/dev/developers/maintainer.html#reference-steps)
+- [ ] Run a test build with the new release to ensure there are no major errors or bugs in the [common-theme](https://github.com/CodeYourFuture/common-theme) repo
+- [ ] Run a test build with the new release to ensure there are no major errors or bugs in the [curriculum](https://github.com/CodeYourFuture/curriculum) repo
+- [ ] Run a test build with the new release to ensure there are no major errors or bugs in other downstream consumers
+- [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency
+- [ ] Write pseudocode that highlights what code should change and how
+- [ ] Call out if it is recommended that users upgrade because of known problems with older releases
 
 ## To Create a New Release
 
@@ -50,8 +52,11 @@
 
 ## References
 * GitHub [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
+* Semver: [Semantic Versioning Specifications](https://semver.org/)
+* Semver [specs disagreement and discussion](https://gist.github.com/jashkenas/cbd2b088e20279ae2c8e)
 * PyMC [Release Checklist](https://github.com/pymc-devs/pymc/blob/main/docs/source/contributing/release_checklist.md) 
 * scikit-learn [Release Process](https://scikit-learn.org/dev/developers/maintainer.html#releasing) 
+* Example of [Feature Freeze](https://scikit-learn.org/dev/developers/maintainer.html#reference-steps)
 
 ## Examples
 Note: These are *examples*. Release notes and `yml` files will be updated for releases.
