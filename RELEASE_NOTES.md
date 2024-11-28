@@ -35,7 +35,7 @@
 - [ ] If a new label has been added ensure that the [release.yml](.github/release.yml) file has been updated
 - [ ] Add a line to the release notes to credit the release manager
 - [ ] Run a test build with the new release to ensure no major errors or bugs
-- [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just dumping the dependency.
+- [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency.
 - [ ] Write pseudocode that highlights what code should change and how.
 - [ ] Call out if it is recommended that users upgrade because of known problems with older releases.
 - [ ] DRAFT NOTES HERE: [steps for creating a branch with a group of commits](https://scikit-learn.org/dev/developers/maintainer.html#reference-steps)
