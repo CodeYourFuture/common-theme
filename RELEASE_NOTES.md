@@ -34,13 +34,9 @@
 - [ ] Ensure all pull requests to be included in the release are labeled and with the appropriate category (Ex: `Breaking-Changes`, `Bug-Fixes`, `Documentation`, `Feature` etc )
 - [ ] Ensure all pull requests to be included in the release are labeled with the appropriate version category (Ex: `Semver-Major`, `Semver-Minor`, `Semver-Patch`)
 - [ ] If a new label has been added ensure that the [release.yml](.github/release.yml) file has been updated
-- [ ] Add a line to the release notes to credit the release manager
 - [ ] Run a test build with the new release to ensure there are no major errors or bugs in the [common-theme](https://github.com/CodeYourFuture/common-theme) repo
 - [ ] Run a test build with the new release to ensure there are no major errors or bugs in the [curriculum](https://github.com/CodeYourFuture/curriculum) repo
 - [ ] Run a test build with the new release to ensure there are no major errors or bugs in other downstream consumers
-- [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency
-- [ ] Write pseudocode that highlights what code should change and how
-- [ ] Call out if it is recommended that users upgrade because of known problems with older releases
 
 ## To Create a New Release
 
@@ -48,7 +44,12 @@
 1. Go to `Choose a new tag`. Set the appropriate tag depending on whether it is a major / minor or micro/patch release.
 1. Pick a branch or recent commit
 1. `Release title`: Example: `Version 0.0.1`
-1. `Release notes`: this section will be automatically populated after hitting `Publish release` and there will be an option to edit the release notes
+1. `Release notes` automatic update: this section will be automatically populated after hitting `Publish release` and there will be an option to edit the release notes
+1. `Release notes` manual updates: 
+  - [ ] Add a line to the release notes to credit the release manager
+  - [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency
+  - [ ] Write pseudocode that highlights what code should change and how
+  - [ ] Call out if it is recommended that users upgrade because of known problems with older releases
 
 ## References
 * GitHub [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
@@ -61,7 +62,7 @@
 ## Examples
 Note: These are *examples*. Release notes and `yml` files will be updated for releases.
 
-- Note that repo label names should match exactly to its references in the `release.yml` file.
+- Note that repo label names should match exactly to its references in the `release.yml` file. For example the label `Breaking Changes` will not connect with `Breaking-Changes` in `release.yml`. (For example, the match is case sensitive and hyphens should match.)
 - If a new label is added, ensure it is added to the appropriate category in the `release.yml` file.
 
 #### [`release.yml`](.github/release.yml) file used for Release v0.0.1
