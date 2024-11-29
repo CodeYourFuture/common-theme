@@ -46,10 +46,10 @@
 1. `Release title`: Example: `Version 0.0.1`
 1. `Release notes` automatic update: this section will be automatically populated after hitting `Publish release` and there will be an option to edit the release notes
 1. `Release notes` manual updates: 
-  - [ ] Add a line to the release notes to credit the release manager
-  - [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency
-  - [ ] Write pseudocode that highlights what code should change and how
-  - [ ] Call out if it is recommended that users upgrade because of known problems with older releases
+    - [ ] Add a line to the release notes to credit the release manager
+    - [ ] List out, as concretely as possible, any steps users have to take when they upgrade beyond just bumping the dependency
+    - [ ] Write pseudocode that highlights what code should change and how
+    - [ ] Call out if it is recommended that users upgrade because of known problems with older releases
 
 ## References
 * GitHub [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
