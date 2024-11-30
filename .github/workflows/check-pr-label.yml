@@ -1,4 +1,5 @@
-name: 
+name: Require label for category before merge
+
 
 on:
   pull_request:
